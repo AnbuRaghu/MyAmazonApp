@@ -15,8 +15,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
-// mongoose.connect(process.env.MONGODB_URL || "mongodb://localhost/amazon", {
-  mongoose.connect("mongodb+srv://Anbu:mundakanni28@cluster0.gbu4j.mongodb.net/amazon?retryWrites=true&w=majority",{
+mongoose.connect(process.env.MONGODB_URL || "mongodb://localhost/amazon", {
+ 
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
